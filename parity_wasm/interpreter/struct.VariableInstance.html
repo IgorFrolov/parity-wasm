@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `VariableInstance` struct in crate `parity_wasm`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, VariableInstance">
+
+    <title>parity_wasm::interpreter::VariableInstance - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc struct">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'>Struct VariableInstance</p><div class="block items"><ul><li><a href="#methods">Methods</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='../index.html'>parity_wasm</a>::<wbr><a href='index.html'>interpreter</a></p><script>window.sidebarCurrent = {name: 'VariableInstance', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>parity_wasm</a>::<wbr><a href='index.html'>interpreter</a>::<wbr><a class="struct" href=''>VariableInstance</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/parity_wasm/interpreter/variable.rs.html#38-45' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct VariableInstance { /* fields omitted */ }</pre><div class='docblock'><p>Variable instance.</p>
+</div>
+                    <h2 id='methods' class='small-section-header'>
+                      Methods<a href='#methods' class='anchor'></a>
+                    </h2>
+                <h3 id='impl' class='impl'><span class='in-band'><code>impl <a class="struct" href="../../parity_wasm/interpreter/struct.VariableInstance.html" title="struct parity_wasm::interpreter::VariableInstance">VariableInstance</a></code><a href='#impl' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/parity_wasm/interpreter/variable.rs.html#55-116' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.new' class="method"><span id='new.v' class='invisible'><code>pub fn <a href='#method.new' class='fnname'>new</a>(<br>&nbsp;&nbsp;&nbsp;&nbsp;is_mutable: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;variable_type: <a class="enum" href="../../parity_wasm/interpreter/enum.VariableType.html" title="enum parity_wasm::interpreter::VariableType">VariableType</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;value: <a class="enum" href="../../parity_wasm/enum.RuntimeValue.html" title="enum parity_wasm::RuntimeValue">RuntimeValue</a><br>) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/result/enum.Result.html" title="enum core::result::Result">Result</a>&lt;Self, <a class="enum" href="../../parity_wasm/interpreter/enum.Error.html" title="enum parity_wasm::interpreter::Error">Error</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/parity_wasm/interpreter/variable.rs.html#57-68' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>New variable instance</p>
+</div><h4 id='method.new_global' class="method"><span id='new_global.v' class='invisible'><code>pub fn <a href='#method.new_global' class='fnname'>new_global</a>(<br>&nbsp;&nbsp;&nbsp;&nbsp;global_type: &amp;<a class="struct" href="../../parity_wasm/elements/struct.GlobalType.html" title="struct parity_wasm::elements::GlobalType">GlobalType</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;value: <a class="enum" href="../../parity_wasm/enum.RuntimeValue.html" title="enum parity_wasm::RuntimeValue">RuntimeValue</a><br>) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/result/enum.Result.html" title="enum core::result::Result">Result</a>&lt;Self, <a class="enum" href="../../parity_wasm/interpreter/enum.Error.html" title="enum parity_wasm::interpreter::Error">Error</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/parity_wasm/interpreter/variable.rs.html#71-73' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>New global variable</p>
+</div><h4 id='method.new_external_global' class="method"><span id='new_external_global.v' class='invisible'><code>pub fn <a href='#method.new_external_global' class='fnname'>new_external_global</a>(<br>&nbsp;&nbsp;&nbsp;&nbsp;is_mutable: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;variable_type: <a class="enum" href="../../parity_wasm/interpreter/enum.VariableType.html" title="enum parity_wasm::interpreter::VariableType">VariableType</a>, <br>&nbsp;&nbsp;&nbsp;&nbsp;value: <a class="struct" href="https://doc.rust-lang.org/nightly/alloc/boxed/struct.Box.html" title="struct alloc::boxed::Box">Box</a>&lt;<a class="trait" href="../../parity_wasm/interpreter/trait.ExternalVariableValue.html" title="trait parity_wasm::interpreter::ExternalVariableValue">ExternalVariableValue</a>&gt;<br>) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/result/enum.Result.html" title="enum core::result::Result">Result</a>&lt;Self, <a class="enum" href="../../parity_wasm/interpreter/enum.Error.html" title="enum parity_wasm::interpreter::Error">Error</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/parity_wasm/interpreter/variable.rs.html#76-88' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>New global with externally stored value.</p>
+</div><h4 id='method.is_mutable' class="method"><span id='is_mutable.v' class='invisible'><code>pub fn <a href='#method.is_mutable' class='fnname'>is_mutable</a>(&amp;self) -&gt; <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.bool.html">bool</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/parity_wasm/interpreter/variable.rs.html#91-93' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Is mutable</p>
+</div><h4 id='method.variable_type' class="method"><span id='variable_type.v' class='invisible'><code>pub fn <a href='#method.variable_type' class='fnname'>variable_type</a>(&amp;self) -&gt; <a class="enum" href="../../parity_wasm/interpreter/enum.VariableType.html" title="enum parity_wasm::interpreter::VariableType">VariableType</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/parity_wasm/interpreter/variable.rs.html#96-98' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Get variable type.</p>
+</div><h4 id='method.get' class="method"><span id='get.v' class='invisible'><code>pub fn <a href='#method.get' class='fnname'>get</a>(&amp;self) -&gt; <a class="enum" href="../../parity_wasm/enum.RuntimeValue.html" title="enum parity_wasm::RuntimeValue">RuntimeValue</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/parity_wasm/interpreter/variable.rs.html#101-103' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Get the value of the variable instance</p>
+</div><h4 id='method.set' class="method"><span id='set.v' class='invisible'><code>pub fn <a href='#method.set' class='fnname'>set</a>(&amp;self, value: <a class="enum" href="../../parity_wasm/enum.RuntimeValue.html" title="enum parity_wasm::RuntimeValue">RuntimeValue</a>) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/result/enum.Result.html" title="enum core::result::Result">Result</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>, <a class="enum" href="../../parity_wasm/interpreter/enum.Error.html" title="enum parity_wasm::interpreter::Error">Error</a>&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/parity_wasm/interpreter/variable.rs.html#106-115' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Set the value of the variable instance</p>
+</div></div>
+            <h2 id='implementations' class='small-section-header'>
+              Trait Implementations<a href='#implementations' class='anchor'></a>
+            </h2>
+        <h3 id='impl-Debug' class='impl'><span class='in-band'><code>impl <a class="trait" href="https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html" title="trait core::fmt::Debug">Debug</a> for <a class="struct" href="../../parity_wasm/interpreter/struct.VariableInstance.html" title="struct parity_wasm::interpreter::VariableInstance">VariableInstance</a></code><a href='#impl-Debug' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/parity_wasm/interpreter/variable.rs.html#37' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.fmt' class="method"><span id='fmt.v' class='invisible'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class="struct" href="https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html" title="struct core::fmt::Formatter">Formatter</a>) -&gt; <a class="type" href="https://doc.rust-lang.org/nightly/core/fmt/type.Result.html" title="type core::fmt::Result">Result</a></code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/parity_wasm/interpreter/variable.rs.html#37' title='goto source code'>[src]</a></span></h4>
+<div class='docblock'><p>Formats the value using the given formatter.</p>
+</div></div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "parity_wasm";
+    </script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>
